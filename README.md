@@ -1,11 +1,29 @@
-# Template Project
+# JobMatch
 
-A simple Next.js template project with authentication support using Supabase.
-
-**Live demo:** https://template-beta-one.vercel.app
+JobMatch is the planned AI layer over job-listing platforms: employers paste
+a listing, the model extracts the real requirements, and matches candidates
+honestly.
 
 See [DESIGN.md](./DESIGN.md) for the portfolio's shared design language —
 read that before styling a new or revamped project.
+
+## What's missing: the AI layer
+
+This repo is a **UI prototype only**. Every screen — job posting tracker,
+application monitor, user scheduler, analytics — renders structured mock
+data so the shape of the product is real, but none of it is wired to a
+real backend or model yet. Specifically not implemented:
+
+- Listing ingestion (paste/import a real job posting)
+- Requirement extraction (the actual AI layer the name refers to)
+- Candidate matching/scoring logic
+- Persisted jobs/applications/users data (currently mock arrays in each
+  page, not database tables)
+- Notifications/alerts beyond static UI
+
+Auth, the dashboard shell, and the design system are real and shared with
+the rest of the portfolio (see DESIGN.md); the job-matching domain logic is
+not.
 
 ## Features
 
@@ -45,6 +63,11 @@ cp .env.example .env.local
 Authenticated E2E tests skip themselves if `E2E_TEST_EMAIL`/`E2E_TEST_PASSWORD`
 aren't set. They're also needed as GitHub Actions secrets of the same names
 for CI.
+
+JobMatch shares its Supabase project (`master_db`) with the rest of the
+portfolio — see `.env.example` and
+`C:\Users\Taufik\project\scripts\setup-supabase-env.mjs` below for how
+Production env vars get set without touching the Vercel dashboard by hand.
 
 4. Run the development server:
 

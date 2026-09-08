@@ -21,6 +21,11 @@ export function AppShell({ nav, children }: { nav: NavDict; children: React.Reac
 
   const navLinks = [
     { href: "/dashboard", label: nav.dashboard },
+    { href: "/jobs", label: nav.jobs },
+    { href: "/applications", label: nav.applications },
+    { href: "/users", label: nav.users },
+    { href: "/profile", label: nav.profile },
+    { href: "/support", label: nav.support },
     { href: "/settings", label: nav.settings },
   ];
 

@@ -2,8 +2,13 @@ import type { Dictionary } from "./en";
 
 export const ms: Dictionary = {
   nav: {
-    brand: "Template",
+    brand: "JobMatch",
     dashboard: "Papan Pemuka",
+    jobs: "Pekerjaan",
+    applications: "Permohonan",
+    users: "Pengguna",
+    profile: "Profil",
+    support: "Sokongan",
     settings: "Tetapan",
     signOut: "Log keluar",
     signingOut: "Sedang log keluar…",
@@ -11,13 +16,18 @@ export const ms: Dictionary = {
     closeMenu: "Tutup menu",
   },
   auth: {
-    tagline: "Lancarkan idea seterusnya dengan lebih pantas.",
-    features: ["Next.js 13+ App Router", "Konfigurasi TypeScript", "Tailwind CSS", "Pengesahan dengan Supabase"],
-    footnote: "Permulaan Next.js + Supabase.",
+    tagline: "Berhenti meneka apa yang sebenarnya diperlukan oleh iklan pekerjaan.",
+    features: [
+      "Keperluan diekstrak oleh AI, bukan tekaan kata kunci",
+      "Padanan calon yang jujur",
+      "Penjejakan permohonan yang kekal teratur",
+      "Dibina atas templat yang sama dengan portfolio lain",
+    ],
+    footnote: "JobMatch ialah prototaip UI untuk padanan pekerjaan yang jujur.",
   },
   home: {
-    title: "Selamat Datang ke Projek Template",
-    subtitle: "Permulaan mudah dengan pengesahan",
+    title: "Selamat Datang ke JobMatch",
+    subtitle: "Padanan yang jujur untuk iklan pekerjaan",
     signIn: "Log Masuk",
     signUp: "Daftar",
     featuresTitle: "Ciri-ciri",
@@ -51,7 +61,7 @@ export const ms: Dictionary = {
   },
   signup: {
     createAccount: "Cipta akaun",
-    subtitle: "Mulakan dengan Template",
+    subtitle: "Mulakan dengan JobMatch",
     firstNamePlaceholder: "Nama pertama",
     firstNameAriaLabel: "Nama Pertama",
     lastNamePlaceholder: "Nama akhir",

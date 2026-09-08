@@ -1,7 +1,12 @@
 export const en = {
   nav: {
-    brand: "Template",
+    brand: "JobMatch",
     dashboard: "Dashboard",
+    jobs: "Jobs",
+    applications: "Applications",
+    users: "Users",
+    profile: "Profile",
+    support: "Support",
     settings: "Settings",
     signOut: "Sign Out",
     signingOut: "Signing out…",
@@ -11,13 +16,18 @@ export const en = {
   // Shared by the left branding panel on /auth/signin and /auth/signup
   // (components/auth-branding-panel.tsx).
   auth: {
-    tagline: "Ship your next idea faster.",
-    features: ["Next.js 13+ App Router", "TypeScript configuration", "Tailwind CSS", "Authentication with Supabase"],
-    footnote: "A Next.js + Supabase starter.",
+    tagline: "Stop guessing what a job listing actually requires.",
+    features: [
+      "AI-extracted requirements, not keyword soup",
+      "Honest candidate matching",
+      "Application tracking that stays organized",
+      "Built on the same starter as the rest of the portfolio",
+    ],
+    footnote: "JobMatch is a UI prototype for honest job matching.",
   },
   home: {
-    title: "Welcome to the Template Project",
-    subtitle: "A simple starter with authentication",
+    title: "Welcome to JobMatch",
+    subtitle: "Honest matching for job listings",
     signIn: "Sign In",
     signUp: "Sign Up",
     featuresTitle: "Features",
@@ -51,7 +61,7 @@ export const en = {
   },
   signup: {
     createAccount: "Create an account",
-    subtitle: "Get started with Template",
+    subtitle: "Get started with JobMatch",
     firstNamePlaceholder: "First name",
     firstNameAriaLabel: "First Name",
     lastNamePlaceholder: "Last name",

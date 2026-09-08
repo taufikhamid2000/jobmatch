@@ -10,10 +10,8 @@ export function AuthBrandingPanel({ brand, dict }: { brand: string; dict: Dictio
       <Link href="/" className="relative flex items-center gap-2.5">
         <svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true">
           <circle cx="16" cy="16" r="15" className="fill-white/15" />
-          <path
-            d="M16 7c.6 3.4 2.4 5.6 6 6.5-3.6.9-5.4 3.1-6 6.5-.6-3.4-2.4-5.6-6-6.5 3.6-.9 5.4-3.1 6-6.5Z"
-            fill="currentColor"
-          />
+          <rect x="7" y="7" width="14" height="14" rx="3" transform="rotate(45 14 14)" fill="currentColor" fillOpacity="0.55" />
+          <rect x="11" y="11" width="14" height="14" rx="3" transform="rotate(45 18 18)" fill="currentColor" />
         </svg>
         <span className="text-lg font-semibold">{brand}</span>
       </Link>

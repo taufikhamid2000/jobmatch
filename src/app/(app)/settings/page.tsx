@@ -20,7 +20,7 @@ import { SubmitButton } from "@/components/submit-button";
 import { getDictionary } from "@/lib/get-dictionary";
 
 export const metadata: Metadata = {
-  title: "Settings - Template",
+  title: "Settings - JobMatch",
   description: "Appearance and account settings",
 };
 

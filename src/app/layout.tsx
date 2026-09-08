@@ -26,8 +26,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Next.js Template",
-  description: "A simple Next.js template project with authentication",
+  title: "JobMatch",
+  description: "JobMatch is the planned AI layer over job-listing platforms — this is a UI prototype.",
 };
 
 export default async function RootLayout({
